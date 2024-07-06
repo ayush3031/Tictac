@@ -60,11 +60,11 @@ export default function App() {
     }
   }
   return (
-    <div className='w-full h-screen bg-zinc-900  flex flex-col items-center justify-center'>
+    <div className='h-screen bg-zinc-900  flex flex-col items-center justify-center'>
       <div>
         <Title/>
       </div>
-      {winX==-1 ?<div className='flex gap-[100px]'><div className=' flex flex-col items-center justify-center'>
+      {winX==-1 ?<div className='flex gap-[10vw]'><div className=' flex flex-col items-center justify-center'>
         <div className=' flex'>
           <Box onclick={() => handleClick(0)} val={state[0]} />
           <Box onclick={() => handleClick(1)} val={state[1]} />
@@ -81,7 +81,7 @@ export default function App() {
           <Box onclick={() => handleClick(8)} val={state[8]} />
         </div>
         </div>
-        <div className='text-zinc-100 text-[30px] border-[1px] border-zinc-200 p-[20px]'>
+        <div className='text-zinc-100 text-[3vw] border-[1px] border-zinc-200 p-[2vw]'>
           <span className='border-b-[1px] border-zinc-200'>Rules:</span>
           <h1>Player 1 has X</h1>
           <h1>Player 2 has O</h1>
